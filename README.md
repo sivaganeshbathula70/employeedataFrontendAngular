@@ -8,7 +8,7 @@ Field Validations.
 ![Screenshot (72)](https://github.com/sivaganeshbathula70/employeedataFrontendAngular/assets/60910411/02cab44a-390f-4f4c-b9ee-f4945312ed25)
 Home page 
 ![Screenshot (73)](https://github.com/sivaganeshbathula70/employeedataFrontendAngular/assets/60910411/27197339-f3ad-4ad6-a4e1-7246a2bb581d)
-
+Add New Employee
 
 
 
