@@ -6,6 +6,7 @@ Hey this is Frontend Angular Part check Master branch for source code.
 
 Field Validations.
 ![Screenshot (72)](https://github.com/sivaganeshbathula70/employeedataFrontendAngular/assets/60910411/02cab44a-390f-4f4c-b9ee-f4945312ed25)
+Home page 
 
 
 
