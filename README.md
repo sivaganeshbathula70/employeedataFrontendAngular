@@ -13,12 +13,13 @@ Add New Employee.
 Update Employee.
 ![Screenshot (75)](https://github.com/sivaganeshbathula70/employeedataFrontendAngular/assets/60910411/f6e3cd4b-3c6e-4287-a90f-3ea1a1874f15)
 
-
+Note : Employee Dashboard was under Development check this tab for more updates...
 
 ![Screenshot (76)](https://github.com/sivaganeshbathula70/employeedataFrontendAngular/assets/60910411/e2277f72-fecc-4ab7-bb60-20a55a0c93a4)
 
 
-
+                                                                                                          - Author : BATHULA SIVAGANESH
+                                                                                                                     Unicon Solutions.
 
 
 
