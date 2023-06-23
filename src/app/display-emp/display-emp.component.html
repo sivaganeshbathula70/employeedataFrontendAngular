@@ -1,0 +1,48 @@
+<img src  ="../../assets/Images/technology-in-the-workplace.png" class="superb" >
+<table class="table">
+   
+    <body style="background-color:aquamarine;">
+
+    <tr class = "baseu">
+        <th class = "Emp">EmpuId</th>
+        <th  class = "Emp">name</th>
+        <th class = "Emp">age</th>
+        <th class = "Emp">salary</th>
+        <th class = "Emp">Action</th>
+    </tr>
+    
+    <tr *ngFor = "let emp of employee">
+        <td class = "Emp">{{emp.empuId}}</td>
+        <td class = "Emp">{{emp.name}}</td>
+        <td class = "Emp">{{emp.age}}</td>
+        <td class = "Emp">{{emp.salary}}</td>
+
+
+        <td>
+            <button class="btn btn-outline-danger" (click)="deleteEmployee(emp.empuId)">Delete</button>
+            &nbsp;&nbsp;
+           
+            
+        </td>
+        </tr>
+        </body>
+</table>
+
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<footer>
+    <p>Author<br><br>
+        <a href="#" class="fa fa-facebook"></a>  
+<a href="#" class="fa fa-twitter"></a>  
+<a href="#" class="fa fa-pinterest"></a>  
+<a href="#" class="fa fa-linkedin"></a>  
+<a href="#" class="fa fa-instagram"></a>  
+<a href="#" class="fa fa-youtube"></a>  
+<a href="#" class="fa fa-google"></a>  
+<a href="#" class="fa fa-snapchat-ghost"></a>  
+<a href="#" class="fa fa-skype"></a>
+  </footer>
+<!-- Add font awesome icons -->
+
+

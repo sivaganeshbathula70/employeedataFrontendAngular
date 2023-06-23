@@ -1,0 +1,31 @@
+<section class="AK">
+    <form #frm="ngForm" (ngSubmit)="updateEmployee()">
+      <h1 class="h1">Update Employee</h1>
+      
+      <div class="uk"> empuId</div>
+      <div class="kk"><input type="number" name="empuId" [(ngModel)]="empvalues.empuId" class="form-control" #empuId="ngModel"
+          required /></div>
+      <div class="ok" *ngIf="empuId.invalid && (empuId.touched || empuId.dirty)">empuId  is
+        required.</div>
+  
+      <div class="uk"> Name</div>
+      <div class="kk"><input type="text" name="name" [(ngModel)]="empvalues.name" pattern ="[A-Za-z]*" name="name" class="form-control" #name="ngModel"
+          required /></div>
+      <div class="ok" *ngIf="name.invalid && (name.touched || name.dirty)">  Name is
+        required and should have only alphabets.</div>
+  
+      <div class="uk">age</div>
+      <div class="kk"><input type="text" name="age" [(ngModel)]="empvalues.age" class="form-control" #age="ngModel"
+          required /></div>
+      <div class="ok" *ngIf="age.invalid && (age.touched || age.dirty)"></div>
+      <div class="uk">salary</div>
+      <div class="kk"><input type="text" name="salary" [(ngModel)]="empvalues.salary" class="form-control" #salary="ngModel"
+          required /></div>
+      <div class="ok" *ngIf="salary.invalid && (salary.touched || salary.dirty)"></div>
+      <br>
+      <div class="kk"><input type="submit" [disabled]="!frm.valid" class="btn btn-dark" /></div>
+    </form>
+  </section>
+  <div>
+    <router-outlet></router-outlet>
+  </div>

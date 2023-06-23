@@ -1,0 +1,42 @@
+.nav-items {
+    padding-top: 40px;
+    .nav-item {
+      padding: 25px 50px;
+      cursor: pointer;
+      @media only screen and (max-width: 1300px) {
+        padding: 13px 20px;
+      }
+      &:hover {
+        background-color: alpha($color: #000000);
+      }
+      fa-icon {
+        margin-right: 20px;
+        font-size: 22px;
+      }
+      span {
+        display: inline;
+        @media only screen and (max-width: 1300px) {
+          display:inline-block;
+        }
+      }
+    }
+  }
+
+  .u{
+    text-align: center;
+    padding: 3px;
+    background-color: alpha($color: #000000);
+  }
+  .menu-button{
+    text-align: center;
+    padding: 4px;
+    background-color: aliceblue;
+  }
+  .superb{
+    height: 800px;  
+    width: 1000px;  
+    border: 11px ridge yellow;  
+    float: left;
+    
+  }
+  

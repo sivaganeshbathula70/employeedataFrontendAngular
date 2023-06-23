@@ -1,0 +1,62 @@
+<div class="container">
+    <h1 class ="o">Employee  Form</h1>
+    <form (ngSubmit)="addEmployee()" #heroForm="ngForm">
+
+      <div class="ok">
+        <label for="empuId">empuId</label>
+        <input type="number" class="form-control" id="empuId" placeholder="empuId"
+               required
+               [(ngModel)]="emp.empuId" name="empuId"
+               #empuId="ngModel">
+        <div class = "ok" [hidden]="empuId.valid || empuId.pristine"
+             class="alert alert-danger">
+          empuId is mandatory.
+        </div><br><br>
+      </div>
+      <div class="ok">
+        <label for="name">name</label>
+        <input type="text" class="form-control" id="name" placeholder="EmpName"
+               required
+               [(ngModel)]="emp.name"   pattern ="[A-Za-z]*" name="name"
+               #pass="ngModel">
+        <div class = "ok" [hidden]="pass.valid || pass.pristine"
+             class="alert alert-danger">
+           Name is Mandatory and should contain only chracters;
+        </div><br><br>
+      </div>
+
+      <div class="ok">
+        <label for="age">age</label>
+        <input type="text" class="form-control" id="age" placeholder="age"
+               required
+               [(ngModel)]="emp.age" pattern="[0-9]*" name="age"
+               #age="ngModel">
+        <div class = "ok" [hidden]="age.valid ||age.pristine"
+             class="alert alert-danger">
+             Age should only contain numbers.
+        
+        </div><br><br>
+      </div>
+      <div class="ok">
+        <label for="salary">salary</label>
+        <input type="text" class="form-control" id="salary" placeholder="salary"
+               required
+               [(ngModel)]="emp.salary" pattern="[0-9]*" name="salary"
+               #salary="ngModel">
+        <div class = "ok" [hidden]="salary.valid ||salary.pristine"
+             class="alert alert-danger">
+             Salary should only contain numbers.
+        
+        </div><br><br>
+      </div>
+      <div class = "ok">
+      <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+      </div>
+      
+    </form>
+
+
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>

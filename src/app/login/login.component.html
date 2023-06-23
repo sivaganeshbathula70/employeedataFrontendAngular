@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Slide Navbar</title>
+  <link rel="stylesheet" type="text/css" >
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="signup">
+      <form>
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" name="txt" placeholder="User name" [(ngModel)]="signupObj.userName" pattern ="[A-Za-z]*" name="userName" class="form-control" #userName="ngModel">
+        <div class="ok" *ngIf="userName.invalid && (userName.touched || userName.dirty)">userName  is
+          required and should has only characters .</div>
+        <input type="email" name="email" placeholder="Email" [(ngModel)]="signupObj.email"  name="email" class="form-control" #email="ngModel">
+        <div class="ok" *ngIf="email.invalid && (email.touched || email.dirty)">email reqwuirement  is
+          failed.</div>
+        <input type="password" name="pswd" placeholder="Password" [(ngModel)]="signupObj.password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="pswd"  #pswd="ngModel">
+        <div class="ok" *ngIf="pswd.invalid && (pswd.touched || pswd.dirty)">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.</div>
+        <button (click)="onSignUp()">Sign up</button>
+      </form>
+    </div>
+
+    <div class="login">
+      <form>
+        <label for="chk" aria-hidden="true">Login</label>
+        <input type="text" name="userName" placeholder="userName" [(ngModel)]="loginObj.userName">
+        <input type="password" name="password" placeholder="Password" [(ngModel)]="loginObj.password">
+        <button (click)="onLogin()">Login</button>
+      </form>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</body>
+
+</html>

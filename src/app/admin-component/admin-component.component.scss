@@ -1,0 +1,18 @@
+.main{
+    display:flex;
+    .side-nav {
+      width: 450px;
+      min-width: 250px;
+      min-height: 250;
+      background-color: #113c60;
+      color: #fff;
+      box-shadow: 7px 7px 7px #939393;
+     // @media only screen and (max-width: 1500px) {
+        width: 100px;
+       // min-width: 100px;
+     // }
+    }
+    .mainapp {
+      padding: 18px;
+    }
+  }
