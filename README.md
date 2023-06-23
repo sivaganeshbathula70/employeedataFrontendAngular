@@ -10,6 +10,8 @@ Home page
 ![Screenshot (73)](https://github.com/sivaganeshbathula70/employeedataFrontendAngular/assets/60910411/27197339-f3ad-4ad6-a4e1-7246a2bb581d)
 Add New Employee.
 ![Screenshot (74)](https://github.com/sivaganeshbathula70/employeedataFrontendAngular/assets/60910411/4751aca2-7e60-4fc9-8711-55f02c5ef750)
+Update Employee.
+![Screenshot (75)](https://github.com/sivaganeshbathula70/employeedataFrontendAngular/assets/60910411/f6e3cd4b-3c6e-4287-a90f-3ea1a1874f15)
 
 
 
